@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Global Chat</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Enter Your Username</h2>
+    <input id="username" maxlength="8" placeholder="3–8 letters (no symbols)" />
+    <button onclick="startChat()">Start</button>
+
+    <div id="chatBox" class="hidden">
+      <div id="messages"></div>
+      <div class="inputBar">
+        <input id="msgInput" placeholder="Type..." />
+        <button onclick="sendMessage()">SEND</button>
+      </div>
+    </div>
+  </div>
+  <script src="/static/script.js"></script>
+</body>
+</html>
