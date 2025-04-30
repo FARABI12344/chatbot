@@ -1,0 +1,52 @@
+body {
+  background: #111;
+  color: white;
+  font-family: Arial;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding-top: 40px;
+}
+
+.container {
+  width: 400px;
+  text-align: center;
+}
+
+#chatBox {
+  background: #222;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+#messages {
+  height: 300px;
+  overflow-y: auto;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.inputBar {
+  display: flex;
+  gap: 5px;
+}
+
+.inputBar input {
+  flex: 1;
+  padding: 10px;
+}
+
+.inputBar button {
+  background: yellow;
+  color: black;
+  font-weight: bold;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
